@@ -2,7 +2,7 @@
 # 01 - Sentencias condicionales (if, elif, else)
 # Permiten ejecutar bloques de código solo si se cumplen ciertas condiciones.
 ###
-
+'''
 from os import system
 if system("clear") != 0: system("cls")
 
@@ -131,22 +131,51 @@ print("\nLa condición ternaria:")
 edad = 17
 mensaje = "Es mayor de edad" if edad >= 18 else "Es menor de edad"
 print(mensaje)
+'''
 
 ###
 # EJERCICIOS
 ###
 
-# Ejercicio 1: Determinar el mayor de dos números
+print ("Ejercicio 1: Determinar el mayor de dos números")
 # Pide al usuario que introduzca dos números y muestra un mensaje
 # indicando cuál es mayor o si son iguales
+a = int(input("Indica un numero: "))
+b = int(input("Indica otro numero: "))
 
-# Ejercicio 2: Calculadora simple
+if a > b:
+  print(f"a = '{a}' es mayor que b = '{b}'")
+
+elif a < b: 
+  print(f"b = '{b}' es mayor que a = '{a}'")
+else:
+  print(f"a '{a}' y b '{b}' son iguales")
+
+
+print("Ejercicio 2: Calculadora simple")
 # Pide al usuario dos números y una operación (+, -, *, /)
 # Realiza la operación y muestra el resultado (maneja la división entre zero)
+a, b = input("Indica 2 numeros: ").split(",")
+operacion = input("Escoje una operacion \n( x | + | - | / ): ")
+a = float(int(a))
+b = float(int(b))
+
+if  operacion == "x":
+  print(f"{a*b}")
+elif operacion == "+":
+  print(f"{a+b}")
+elif operacion == "-":
+  print(f"{a-b}")
+elif operacion == "/":
+  print(f"{a/b}")
+else: 
+  print("Introduce un operador valido")
+
 
 # Ejercicio 3: Año bisiesto
 # Pide al usuario que introduzca un año y determina si es bisiesto.
 # Un año es bisiesto si es divisible por 4, excepto si es divisible por 100 pero no por 400.
+
 
 # Ejercicio 4: Categorizar edades
 # Pide al usuario que introduzca una edad y la clasifique en:
