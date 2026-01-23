@@ -176,6 +176,13 @@ else:
 # Pide al usuario que introduzca un año y determina si es bisiesto.
 # Un año es bisiesto si es divisible por 4, excepto si es divisible por 100 pero no por 400.
 
+y = int(input("Indica un año: "))
+
+if (y % 4 ==0 and y % 100 != 0) or (y % 400 == 0):
+  print(f"{y} es bisiesto")
+else:
+  print(f"{y} no es bisiesto")
+
 
 # Ejercicio 4: Categorizar edades
 # Pide al usuario que introduzca una edad y la clasifique en:
