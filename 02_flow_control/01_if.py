@@ -191,3 +191,21 @@ else:
 # - Adolescente (13-17 años)
 # - Adulto (18-64 años)
 # - Adulto mayor (65 años o más)
+
+edad = int(input("Indica una edad: "))
+
+if 0<= edad <=2:
+  print("Eres un bebe!")
+elif 3<= edad <=12:
+  print("Ya eres un niño!")
+elif 13<= edad <=17:
+  print("Que complicada es la adolescencia!")
+elif 18<= edad <=64:
+  print("Eres todo un adulto")
+elif edad >=65:
+  print("Eres un Adulto mayor")
+else: 
+  print(f"{edad} no es una edad valida!")
+
+
+  
